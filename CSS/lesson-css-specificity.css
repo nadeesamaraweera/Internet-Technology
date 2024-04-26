@@ -1,0 +1,37 @@
+p{
+    color:black;
+}
+.content{
+    color: blueviolet
+}
+
+#content_id{
+    color: red;
+}
+h4{
+    color: rgb(93, 53, 4);
+}
+.card-title{
+    color: red;
+}
+#recipe-card-title{
+    color: blue;
+}
+
+div h4{
+    color: blueviolet;
+}
+div.card-title{
+    color: green;
+}
+
+div #recipe-card-title{
+    color: brown;
+}
+
+.card.card-title{
+    color: blueviolet;
+}
+#recipe-card-id #recipe-card-title{
+    color:fuchsia;
+}
