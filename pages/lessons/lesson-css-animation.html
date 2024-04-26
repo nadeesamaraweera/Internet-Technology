@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson-Css-animation</title>
+    <style>
+        .body{
+            margin: 0;
+        }
+        .box{
+            width:100px ;
+            height: 100px;
+            background-color:chartreuse;
+            /* margin-top: 5px;
+            margin-left: 5px; */
+            position: relative;
+            /* animation-name: square;
+            animation-duration: 10s;
+            animation-timing-function: linear;
+            animation-iteration-count:infinite ; */
+            animation-delay: 2s;
+            animation: square 15s linear infinite;
+            
+           
+           
+            
+         }
+
+        /* @keyframes square {
+            0%{
+             left: 100px;
+            top: 100px;
+            
+
+            }
+            
+            25%{
+            left: 600px;
+            top: 100px; 
+            border-radius: 16px;
+            transform: scale(1);
+            }
+
+            50%{
+            left: 600px;
+            top: 600px;  
+            border-radius: 26px;
+            transform: scale(2);
+
+            }
+
+            75%{
+            left: 100px;
+            top: 600px;  
+            border-radius: 36px;
+            transform: scale(3);
+            
+            }
+            100%{
+            left: 100px;
+            top: 100px;
+            border-radius: 50px; 
+            transform: scale(1)
+            
+            } */
+        
+
+        .box2{
+            position: relative;
+            width: 100px;
+            height: 100px;
+            left: 100px;
+            top: 100px;         
+            background-color:  tomato;
+            /* animation-name: up-down;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite; */
+
+            animation: up-down 3s linear infinite;
+        }
+
+        @keyframes up-down {
+            0%{
+                transform: translateY(0);
+            }
+            
+            50%{
+                transform: translateY(-32px);
+            }
+            100%{
+                transform: translateY(32px);
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <div class="box2"></div>
+    
+</body>
+</html>

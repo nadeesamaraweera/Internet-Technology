@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson-table</title>
+    <style>
+      table{
+        border: 1px solid blue;
+      }
+
+      th{
+        border-color: rgb(177, 123, 52);
+      }
+
+     
+     td{
+        border: 1px solid blue;
+      }
+      </style>
+</head>
+<body>
+
+    <p>
+        =========== Sample HTML Table===========
+    </p>
+    <table style="border: 1px solid red;">
+      <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>City</th>
+        </tr>
+     </thead>
+      <tbody>
+        <tr>
+          <td>Nadeesha</td>
+          <td>Samaraweera</td>
+          <td>0716490250</td>
+          <td>nadee@gmail.com</td>
+          <td>Matara</td>
+        </tr>
+        <tr>
+            <td>Sanduni</td>
+            <td>Siva</td>
+            <td>0712345440</td>
+            <td>saduni@gmail.com</td>
+            <td>Galle</td>
+          </tr>
+  
+      </tbody>
+      <tfoot></tfoot>
+    </table>
+
+    <p>
+        ===========Table with  head, body and foot===========
+
+    </p>
+
+
+    <table style="border: 1px solid black;">
+        <thead>
+          <tr>
+              <th>Item Name</th>
+              <th>Qty</th>
+              <th>Price</th>
+          </tr>
+       </thead>
+        <tbody>
+          <tr>
+            <td style="width: 200px;">Book</td>
+            <td>100</td>
+            <td>200.00</td>
+          </tr>
+          <tr>
+              <td>Bag</td>
+              <td>50</td>
+              <td>2000.00</td>
+          </tr>
+         </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td></td>
+                <td>2200.00</td>
+            </tr>
+        </tfoot>
+      </table>
+
+
+      <p>
+        =========== Sample Table===========
+     </p>
+    <table border="1" style="width: 400px; text-align:center;">
+    
+      
+        <tr style="height: 100px;">
+            <td colspan="2">1</td>
+           
+            <td>3</td>
+            <td>4</td>
+        </tr>
+
+        <tr style="height: 100px;">
+          <td>5</td>
+          <td colspan="3">6</td>
+          
+        </tr>
+        <tr style="height: 100px;">
+            <td>9</td>
+            <td colspan="2">10</td>
+            
+            <td>12</td>
+          </tr>
+          <tr style="height: 100px;">
+            <td colspan=" 3">13</td>
+           
+            <td>16</td>
+          </tr>
+  
+      
+    </table>
+
+------------------------------------------------------------------------------------------
+    <p>
+        ==========Excersise===========
+    </p>
+
+    <table border="1" style="width: 400px; text-align:center;">
+    
+      
+        <tr style="height: 100px;">
+            <td rowspan="2">1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+
+        <tr style="height: 100px;">
+          <td rowspan="3">6</td>
+          <td>7</td>
+          <td rowspan="3">8</td>
+
+          
+        </tr>
+        <tr style="height: 100px;">
+            <td rowspan="2">9</td>
+            
+            <td>11</td>
+            
+        </tr>
+
+        <tr style="height: 100px;">
+            
+            <td>15</td>
+           
+          </tr>
+  
+      
+    </table>    
+</body>
+</html>

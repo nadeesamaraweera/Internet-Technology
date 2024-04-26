@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson-Pseudo</title>
+    <style>
+        button{
+            background-color: black;
+            color: white;
+        }
+        button:hover{
+            background-color: rgb(19, 199, 139);
+            cursor:pointer;
+        }
+        button:active{
+            color: #bb0d0d;
+            background-color: blue;
+        }
+        li:first-child{
+            color: #3ccb0c;
+
+        }
+        li:nth-child(3){
+            color: #970a0a;
+        }
+        li:last-child{
+            color: #944a0e;
+        }
+
+        /* pseudo elements styling */
+        p::before{
+            content: "Read this...";
+            color: red;
+        }
+        p::after{
+            content:"See More....";
+            color: red;
+        }
+        p::first-letter{
+            font-size: 30px;
+            color: blue;
+        }
+        p::first-line{
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Lesson-Pseudo</h1>
+
+    <h2>=======Pseudo Classes========</h2>
+
+    <button>Click me</button>
+
+    <ul>
+      <li>Java</li>
+      <li>Python</li>
+      <li>Javascript</li>
+      <li>MySQL</li>
+    </ul>
+
+    <h2>=======Pseudo Elements========</h2>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, a accusamus? Ad ipsa aliquid itaque, perspiciatis quae distinctio doloribus eius tempora iusto vitae harum reiciendis exercitationem sint eveniet enim optio aliquam nemo accusantium sed. Perspiciatis eaque dolor molestias deserunt quo dolorum corporis qui itaque tempora nostrum, non quidem? Quae error excepturi itaque nobis, dignissimos qui illo quisquam ipsa non incidunt tenetur libero dolorem inventore commodi odit alias? Nam eligendi, libero eius vitae aut, maiores pariatur officiis velit nesciunt cumque dolorem! Eum veritatis saepe quidem id ducimus! Deleniti sit molestias recusandae necessitatibus facilis laborum explicabo, non ullam libero neque fuga earum!</p>
+    
+</body>
+</html>

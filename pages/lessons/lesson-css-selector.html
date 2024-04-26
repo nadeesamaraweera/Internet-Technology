@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson-CSS- selector</title>
+    <style>
+        /* 1.Element selector */
+        h2{
+            color: rgb(51, 16, 188);
+        }
+
+        /* 2.Id selector */
+        #main-heading{
+            color: brown;
+        }
+
+        /* 3.Class selector */
+        .heading-selector{
+            color: red;
+        }
+
+        /* 4.Attribute selector */
+        input[type="text"]{
+            background-color:aquamarine;
+        }
+         /* 5.Pseudo Class selector */
+        button:hover{
+            background-color: red;
+            color: white;
+            cursor: pointer;
+        }
+         /* 6.Pseudo Element selector */
+        p::first-line{
+            color: blue;
+            font-weight: bold;
+        }
+        /* 7. Descendant selector */
+        div h4{
+            color: #d32020;
+        }
+
+        div div h4{
+            color: blueviolet;
+        }
+        /* 8. Child selector(>) */
+        div > h5{
+            font-weight: bold;
+            font-style: italic;
+            color: green;
+        }
+        /* 9.Adjacent sibiling selector */
+        h2 + p{
+            background-color: aquamarine;
+        }
+        /* 10.Genaral sibiling selector */
+        h3 ~ p {
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Selectors</h1>
+
+    ======== 1. Element selector ========
+
+    <h2>Element selector</h2>
+    
+    ======== 2. ID selector ========
+
+    <h2 id="main-heading">ID selector</h2>
+   
+    ======== 3. Class selector ========
+
+    <h2 class="heading-selector">Class selector</h2>
+    <h3 class="heading-selector">Class selector</h3>
+    <h5 class="heading-selector">Class selector</h5>
+    
+    ======== 4. Attribute selector ========
+    <br>
+    <br />
+    <input type="text" placeholder="Enter your full name">
+    
+    <br />
+    <br>
+    <input type="number" placeholder="Enter your age">
+    <br>
+    <br>
+    ======== 5. Pseudo Classes selector ========
+
+    <br />
+    <button > Click Here</button>
+    <br />
+    <br>
+
+    ======== 6. Pseudo Element selector ========
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore obcaecati sed perferendis eius repellat sint ab non magni nesciunt quas deleniti, laudantium dolorem possimus dicta debitis, officiis delectus molestias totam? Tempore ut ex placeat maiores ipsa nisi sunt necessitatibus consequuntur aspernatur, saepe adipisci, rerum eligendi perferendis distinctio nam voluptatem vero temporibus unde iure tempora? Ex quam, placeat sequi iure fuga soluta rem? Asperiores, architecto officia in perferendis id mollitia sint velit fugit accusantium nihil magnam aperiam nam a voluptatum tenetur dolorem culpa voluptatem quas non cumque doloremque ratione expedita tempora! Repellendus, dolorum? Quo libero nam repellendus distinctio quidem incidunt magnam.</p>
+
+
+    ======== 7. Descendant selector(white-space combinator)=========
+
+    <div>
+        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem esse eos earum consectetur neque omnis voluptatem labore incidunt magni asperiores inventore dicta, placeat debitis quam doloribus officiis deleniti consequatur dolor.</h4>
+
+       <div>
+        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem esse eos earum consectetur neque omnis voluptatem labore incidunt magni asperiores inventore dicta, placeat debitis quam doloribus officiis deleniti consequatur dolor.
+        </h4>
+    </div>
+    </div>
+    
+    ======== 8. Child selector(>)=========
+
+    <div>
+        <h5>Java</h5>
+        <h5>Python</h5>
+        <h5>Javascript</h5>
+        <h5>MySQL</h5>
+        
+       
+    </div>
+
+    ======== 9. Adjacent sibiling selector(+)=========
+    <h2>Heading 2</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse consequatur odio nam nihil dicta placeat, quod voluptatibus adipisci laborum quisquam provident. Saepe aspernatur eligendi sint molestias aliquid, atque nihil eos.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse consequatur odio nam nihil dicta placeat, quod voluptatibus adipisci laborum quisquam provident. Saepe aspernatur eligendi sint molestias aliquid, atque nihil eos.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse consequatur odio nam nihil dicta placeat, quod voluptatibus adipisci laborum quisquam provident. Saepe aspernatur eligendi sint molestias aliquid, atque nihil eos.</p>
+
+
+    ======== 10. Genaral sibiling selector(~)=========
+    <h3>Heading 3</h3>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque perferendis debitis mollitia doloribus nam ea maxime repudiandae cupiditate, sint atque id aperiam saepe quis at commodi officia quibusdam! Est, quod?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque perferendis debitis mollitia doloribus nam ea maxime repudiandae cupiditate, sint atque id aperiam saepe quis at commodi officia quibusdam! Est, quod?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque perferendis debitis mollitia doloribus nam ea maxime repudiandae cupiditate, sint atque id aperiam saepe quis at commodi officia quibusdam! Est, quod?</p>
+
+
+</body>
+</html>
