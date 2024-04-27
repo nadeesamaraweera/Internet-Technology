@@ -16,11 +16,28 @@ let timeout = setTimeout( () => {
     console.log("Hello........")
 } ,5000)
 
+//cancel the  timeout
 clearTimeout(timeout)
 
-
+console.log("=====================")
 
 
 
 //2.setInterval
+
+//setInterval(callback , interval)
+
+// setInterval(() => {
+//     console.log("Hey")
+// } , 5000);
+
+
+let interval = setInterval(() => {
+    console.log("Hey")
+} , 5000);
+
+//cancel the  timeout
+clearInterval(interval)
+
+console.log("=====================")
 
