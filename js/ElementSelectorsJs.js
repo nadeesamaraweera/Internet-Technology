@@ -7,8 +7,9 @@
 let calculateBtn = document.getElementById("btnCalculate");
 console.log(calculateBtn);
 
-calculateBtn.style.backgroundColor = "black";
-calculateBtn.style.border = 0;
+calculateBtn.style.backgroundColor = "green";
+calculateBtn.style.color = "white";
+
 
 calculateBtn.addEventListener("click", () => alert("Hello"));
 
@@ -21,3 +22,27 @@ console.log(boxes);
 
 let h1Tags = document.getElementsByTagName("h1");
 console.log(h1Tags);
+
+
+//Query selector
+
+let button = document.querySelector("#btnCalculate")
+console.log(button)
+
+let testDiv = document.querySelector(".test-div")
+console.log(testDiv)
+
+let box = document.querySelector(".box")
+console.log(box)
+
+let b = document.querySelectorAll(".box")
+console.log(b)
+
+let bb =document.querySelector("#container .box")
+console.log(bb)
+
+// let bc =document.querySelector("#container .box")
+// console.log(bc)
+
+let bbb =document.querySelectorAll("#container .box")
+console.log(bbb)
